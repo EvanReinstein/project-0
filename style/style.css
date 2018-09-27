@@ -1,0 +1,56 @@
+/* Univerals
+====================*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Body
+====================*/
+
+body {
+  font-family: 'Lora', serif;
+  background-color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+/* Header
+====================*/
+
+header {
+  display: flex;
+  flex-direction: row;
+  height: 30px;
+}
+
+header h3 {
+  position: fixed;
+  top: 5px;
+  left: 20px;
+}
+
+.header-nav {
+  position: fixed;
+  top: 5px;
+  right: 20px;
+}
+
+.navList {
+  display: flex;
+}
+
+.nav-item {
+  list-style-type: none;
+  margin-left: 30px;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Main
+====================*/
+main {
+  margin-top: 30px;
+}
