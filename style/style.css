@@ -21,6 +21,12 @@ header {
   display: flex;
   flex-direction: row;
   height: 30px;
+  background-color: rgb(150, 150, 150);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 998;
 }
 
 header h3 {
@@ -33,6 +39,7 @@ header h3 {
   position: fixed;
   top: 5px;
   right: 20px;
+  z-index: 999;
 }
 
 .navList {
@@ -46,11 +53,48 @@ header h3 {
 
 .nav-item a {
   text-decoration: none;
-  color: black;
+  color: rgb(0, 0, 0);
 }
 
-/* Main
+/* Layout
 ====================*/
 main {
   margin-top: 30px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+}
+
+.projects {
+  display: flex;
+  flex-direction: row;
+}
+
+.skills {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+section {
+  margin: 20px 15px 20px 15px;
+}
+/* About
+====================*/
+#map {
+  height: 300px;
+  width: 400px;
+  margin: 0 20px 10px 0;
 }

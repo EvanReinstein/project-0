@@ -19,10 +19,10 @@
     <h3>Evan D Reinstein</h3>
     <nav class="header-nav">
       <ul class="navList">
-        <li class="nav-item"><a href="#">About</a></li>
-        <li class="nav-item"><a href="#">Projects</a></li>
-        <li class="nav-item"><a href="#">Skills</a></li>
-        <li class="nav-item"><a href="#">Contact</a></li>
+        <li class="nav-item"><a href="#About">About</a></li>
+        <li class="nav-item"><a href="#Projects">Projects</a></li>
+        <li class="nav-item"><a href="#Skills">Skills</a></li>
+        <li class="nav-item"><a href="#Contact">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -30,18 +30,20 @@
   <div class="container">
     <main class="content">
 
-      <section class="about">
-        <div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam iure dolor quos deserunt aspernatur veritatis nesciunt excepturi, nam, aut incidunt, rerum ut neque quas. Officiis dolor temporibus animi aliquid nulla!</p>
-          <div>
-            <div id="map"></div>
-            <p>Learn about where I've lived</p>
+      <section id="About">
+          <h2>About</h2>
+          <div class="about">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam iure dolor quos deserunt aspernatur veritatis nesciunt excepturi, nam, aut incidunt, rerum ut neque quas. Officiis dolor temporibus animi aliquid nulla!</p>
+            <div>
+              <div id="map"></div>
+              <p>Learn about where I've lived</p>
+            </div>
           </div>
-        </div>
       </section>
 
       <section class="projects">
         <div>
+          <h2 id="Projects">Projects</h2>
           <div class="carousel">
             <img src="#" alt="project 0">
             <img src="#" alt="project 1">
@@ -52,10 +54,13 @@
       </section>
 
       <section class="skills">
-
+        <div>
+          <h2 id="Skills">Skills</h2>
+        </div>
       </section>
 
       <section class="contact">
+        <h2 id="Contact">Contact Me</h2>
         <form action="">
           <input type="text" placeholder="Name">
           <input type="email" placeholder="Your Email">
@@ -78,7 +83,12 @@
       </ul>
     </div>
   </footer>
+
+  <!-- Google Maps API -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHLett8djBo62dDXj0EjCimF8Rd6E8cxg"></script>
+  <!-- jQuery Script -->
   <script src="scripts/jQuery_v3.3.1.js"></script>
+  <!-- JS -->
   <script type="text/javascript" src="scripts/main.js"></script>
 </body>
 </html>
