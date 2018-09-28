@@ -15,13 +15,9 @@ body {
 }
 /* Typography
 ====================*/
-h2 {
-  height: 30vh;
-  width: 150px;
-  margin: 0 auto;
-  margin-top: 90px;
-  text-align: center;
-}
+/* h2 {
+
+} */
 /* Header
 ====================*/
 header {
@@ -104,6 +100,22 @@ main {
 
 /* About
 ====================*/
+.about-header {
+  height: 80vh;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  text-align: center;
+  background-image: url('../images/aaron-bean-446547-unsplash.jpg');
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.about-header h2 {
+  margin: auto;
+}
 #map {
   height: 300px;
   width: 400px;
@@ -115,9 +127,20 @@ main {
 }
 /* Projects
 ====================*/
-
+.projects-header {
+  height: 50vh;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
 /* Skills
 ====================*/
+.skills-header {
+  width: 100%;
+  margin: 20px auto;
+  text-align: center;
+}
+
 .staircase {
   width: 50%;
   display: flex;
@@ -178,25 +201,23 @@ main {
 }
 /* Contact
 ====================*/
-
+.contact-header {
+  width: 100%;
+  margin: 20px auto;
+  text-align: center;
+}
 form {
   display: flex;
   flex-direction: column;
   width: 780px;
-}
-
-form div {
-  display: flex;
-  flex-direction: row;
-  box-sizing: border-box;
-}
-
-input:first-child {
-  margin-right: 10px;
+  max-width: 100%;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 form input {
-  width: 380px;
+  width: 100%;
   margin: 0px 0px 10px 0px;
   border: 2px solid rgb(0, 0, 0);
   height: 20px;
