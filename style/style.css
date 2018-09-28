@@ -7,16 +7,23 @@
 
 /* Body
 ====================*/
-
 body {
   font-family: 'Lora', serif;
   background-color: rgb(255, 255, 255);
   font-size: 16px;
+  /* overflow: hidden; */
 }
-
+/* Typography
+====================*/
+h2 {
+  height: 30vh;
+  width: 150px;
+  margin: 0 auto;
+  margin-top: 90px;
+  text-align: center;
+}
 /* Header
 ====================*/
-
 header {
   display: flex;
   flex-direction: row;
@@ -80,21 +87,144 @@ main {
 .skills {
   display: flex;
   flex-direction: row;
+  width: 100%;
+  box-sizing: border-box;
+  background-image: url('../images/everest.jpg');
 }
 
 .contact {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  width: 100%;
 }
 
 section {
   margin: 20px 15px 20px 15px;
 }
+
 /* About
 ====================*/
 #map {
   height: 300px;
   width: 400px;
   margin: 0 20px 10px 0;
+}
+.map h4 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+/* Projects
+====================*/
+
+/* Skills
+====================*/
+.staircase {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 20px 0 70px;
+}
+.info-box {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: 40px 0 0 20px;
+}
+
+.info-box p {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgba(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.6);
+  margin-top: 10px;
+}
+.right {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  color: rgba(0, 0, 0);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.row, .int {
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  margin: 5px auto;
+}
+
+.int2 {
+  max-width: 90%;
+}
+.int3 {
+  max-width: 80%;
+}
+.int4 {
+  max-width: 70%;
+}
+.int5 {
+  max-width: 60%;
+}
+.int6 {
+  max-width: 50%;
+}
+.int7 {
+  max-width: 40%;
+}
+/* Contact
+====================*/
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 780px;
+}
+
+form div {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+
+input:first-child {
+  margin-right: 10px;
+}
+
+form input {
+  width: 380px;
+  margin: 0px 0px 10px 0px;
+  border: 2px solid rgb(0, 0, 0);
+  height: 20px;
+}
+
+form textarea {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.button {
+  height: 20px;
+  margin: 10px 0;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 5px;
+}
+
+/* Footer
+====================*/
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px 0;
+  background-color:rgb(150, 150, 150);
+}
+
+footer p {
+  margin-right: 20px;
+}
+
+footer i {
+  margin: 0 10px;
+  font-size: 20px;
 }
