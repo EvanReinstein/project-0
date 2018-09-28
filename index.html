@@ -17,11 +17,23 @@
 <body>
   <header>
     <h3>Evan D Reinstein</h3>
+    <i class="fas fa-bars"></i>
+    <div class="dropdown dropdown-hidden">
+      <ul class="nav-list">
+        <li class="drop-item"><a href="#About">About</a></li>
+        <li class="drop-item"><a href="#Projects">Projects</a></li>
+        <li class="drop-item"><a href="#Skills">Skills</a></li>
+        <li class="drop-item"><a href="#Quotes">Quotes</a></li>
+        <li class="drop-item"><a href="#Contact">Contact</a></li>
+      </ul>
+    </div>
+
     <nav class="header-nav">
       <ul class="navList">
         <li class="nav-item"><a href="#About">About</a></li>
         <li class="nav-item"><a href="#Projects">Projects</a></li>
         <li class="nav-item"><a href="#Skills">Skills</a></li>
+        <li class="nav-item"><a href="#Quotes">Quotes</a></li>
         <li class="nav-item"><a href="#Contact">Contact</a></li>
       </ul>
     </nav>
@@ -106,15 +118,31 @@
         </div>
       </section>
 
+      <section>
+        <div class="testimonial-header">
+          <h2>Testimonials</h2>
+        </div>
+        <div class="testimonials">
+          <p class="testimonial">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit consequuntur nihil, vitae illum aspernatur, dicta facere. Eius quos mollitia, quibusdam eos facere, perferendis blanditiis assumenda laborum dolor consectetur hic explicabo. - Barack Obama
+          </p>
+          <p class="testimonial hidden">
+            Evan Reinstein work has absolutely changed my life. His positivity and general
+            fashion sense is a constant highlight in my day. I would be a shriveled lost child
+            cowering in a corner without his constant guidance. I celebrate his entire collection
+            but this latest project is bigger than the moon landing. Thank you Evan. Thank you. - Paul Mourraille
+          </p>
+          <p class="testimonial hidden">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa beatae saepe delectus, accusantium doloribus nesciunt recusandae obcaecati non nostrum perferendis consectetur, impedit quaerat veniam. Sunt rem iusto repellat beatae saepe. - Bill Hader</p>
+        </div>
+      </section>
+
       <div class="contact-header">
         <h2 id="Contact">Contact Me</h2>
       </div>
       <section class="contact">
         <form action="">
-          <div>
-            <input type="text" placeholder=" Name">
-            <input type="email" placeholder=" Your Email">
-          </div>
+          <input type="text" placeholder=" Name">
+          <input type="email" placeholder=" Your Email">
           <textarea name="name" rows="8" cols="80" placeholder=" Message"></textarea>
           <button class="button">Send It!</button>
         </form>

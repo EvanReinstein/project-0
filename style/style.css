@@ -15,9 +15,7 @@ body {
 }
 /* Typography
 ====================*/
-/* h2 {
 
-} */
 /* Header
 ====================*/
 header {
@@ -37,6 +35,17 @@ header h3 {
   top: 5px;
   left: 20px;
 }
+.dropdown {
+  display: none;
+}
+
+.fa-bars {
+  display: none;
+}
+
+.dropdown-hidden {
+  width: 0;
+ }
 
 .header-nav {
   position: fixed;
@@ -57,6 +66,16 @@ header h3 {
 .nav-item a {
   text-decoration: none;
   color: rgb(0, 0, 0);
+}
+
+.drop-item {
+  list-style-type: none;
+  margin: 10px;
+}
+
+.drop-item a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
 }
 
 /* Layout
@@ -114,7 +133,10 @@ main {
 }
 
 .about-header h2 {
-  margin: auto;
+  margin: 0 auto;
+  padding: 150px;
+  font-size: 40px;
+  color: rgba(255, 255, 255);
 }
 #map {
   height: 300px;
@@ -199,6 +221,26 @@ main {
 .int7 {
   max-width: 40%;
 }
+/* Testimonials
+====================*/
+.testimonial-header {
+  text-align: center;
+  margin: 30px auto;
+  width: 100%
+}
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.testimonial {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.hidden {
+  display: none;
+}
 /* Contact
 ====================*/
 .contact-header {
@@ -209,6 +251,7 @@ main {
 form {
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
   width: 780px;
   max-width: 100%;
   margin-left: 20px;
@@ -251,4 +294,49 @@ footer p {
 footer i {
   margin: 0 10px;
   font-size: 20px;
+}
+
+/* Media Queries
+====================*/
+@media only screen and (max-width: 780px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .map {
+    margin: 0 auto;
+  }
+
+  .info-box p {
+    font-size: 13px;
+    line-height: 20px
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+  }
+
+  .header-nav {
+    display: none;
+  }
+  .fa-bars {
+    display: inline;
+    position: fixed;
+    top: 5px;
+    right: 10px;
+  }
+
+  .dropdown {
+    display: inline;
+    position: fixed;
+    top: 30px;
+    right: 10px;
+    background-color: rgba(0, 0, 0);
+    transition: width .5s ease;
+  }
+
 }

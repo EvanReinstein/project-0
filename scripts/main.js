@@ -37,7 +37,7 @@ function makeMapMarker () {
 makeMapMarker();
 
 // Smooth Scroll
-$('nav a').on('click', function (e) {
+$('header a').on('click', function (e) {
   var targetHref = $(this).attr('href');
 
   $('html, body').animate({
@@ -45,3 +45,37 @@ $('nav a').on('click', function (e) {
 
     e.preventDefault();
 });
+
+// Testimonial Reveal/Hide Cycle
+function testimonialCycle() {
+    var quotes = $(".testimonial");
+    var quoteIndex = -1;
+//call on next quote
+    function showNextQuote() {
+        ++quoteIndex;
+        quotes.eq(quoteIndex % quotes.length)
+            .fadeIn(2000)
+            .delay(6000)
+            .fadeOut(2000, showNextQuote);
+    }
+    showNextQuote();
+};
+testimonialCycle();
+
+//***** Dropdown Menu *****//
+// Set click event on hamburger
+var menuButton = document.querySelector('.fa-bars');
+// console.log(menuButton);
+menuButton.addEventListener('click', menuClick);
+
+// menu click
+function menuClick (event) {
+  console.log(event);
+  var dropdown = document.querySelector('.dropdown');
+
+  if (dropdown.classList.contains('dropdown-hidden')) {
+    dropdown.classList.toggle('dropdown-hidden');
+  } else {
+    dropdown.classList.toggle('dropdown-hidden');
+  }
+}
