@@ -42,12 +42,16 @@
   <div class="container">
     <main class="content">
 
-      <div class="about-header">
+      <div class="about-header" id="About">
         <h2>About</h2>
       </div>
-      <section id="About">
+      <section>
           <div class="about">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam iure dolor quos deserunt aspernatur veritatis nesciunt excepturi, nam, aut incidunt, rerum ut neque quas. Officiis dolor temporibus animi aliquid nulla!</p>
+            <div class="about-paragraphs">
+            <p>I am a full stack web developer in development in the San Francisco Bay Area. Using technology in my classroom piqued my interest in web development, particularly with how young people interact with learning technologies. I intend to use my web development skills to help bridge the tech learning gap for students in underserved communities and foster opportunities for collaboration between tech companies and those very same students.</p>
+            <br>
+            <p>When I'm not thinking about young people and technology I am often rooting for FC Liverpool and the Michigan Wolverines.  Go Blue!</p>
+            </div>
             <div class="map">
               <h4>Places I've Called Home:</h4>
               <div id="map"></div>
@@ -55,8 +59,8 @@
           </div>
       </section>
 
-      <div class="projects-header">
-        <h2 id="Projects">Projects</h2>
+      <div class="projects-header" id="Projects">
+        <h2>Projects</h2>
       </div>
       <section class="projects">
         <div>
@@ -71,13 +75,13 @@
         </div>
       </section>
 
-      <div class="skills-header">
-        <h2 id="Skills">Skills</h2>
+      <div class="skills-header" id="Skills">
+        <h2>Skills</h2>
       </div>
       <section class="skills">
         <div class="info-box">
           <h3>Climb the Mountain!</h3>
-          <p>These are the skills that I have been working on over the past few months.  My focus in the last several weeks has been on building eye-catching, high performing web pages.  The site your currently viewing makes use of my knowledge of CSS3, HTML5, JavaScript and jQuery.  In the future I plan on climbing even higher, using programming languages as my stepping stones!</p>
+          <p>These are the skills that I have been working on over the past few months. The site you're currently viewing makes use of my knowledge of CSS3, HTML5, JavaScript and jQuery.  In the future I plan on climbing even higher, using programming languages as my stepping stones! 😁</p>
         </div>
         <div class="staircase">
           <div class="row">
@@ -118,16 +122,16 @@
         </div>
       </section>
 
+      <div class="testimonial-header" id="Quotes">
+        <h2>Testimonials</h2>
+      </div>
       <section>
-        <div class="testimonial-header">
-          <h2>Testimonials</h2>
-        </div>
         <div class="testimonials">
           <p class="testimonial">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit consequuntur nihil, vitae illum aspernatur, dicta facere. Eius quos mollitia, quibusdam eos facere, perferendis blanditiis assumenda laborum dolor consectetur hic explicabo. - Barack Obama
           </p>
           <p class="testimonial hidden">
-            Evan Reinstein work has absolutely changed my life. His positivity and general
+            Evan Reinstein's work has absolutely changed my life. His positivity and general
             fashion sense is a constant highlight in my day. I would be a shriveled lost child
             cowering in a corner without his constant guidance. I celebrate his entire collection
             but this latest project is bigger than the moon landing. Thank you Evan. Thank you. - Paul Mourraille
@@ -136,8 +140,8 @@
         </div>
       </section>
 
-      <div class="contact-header">
-        <h2 id="Contact">Contact Me</h2>
+      <div class="contact-header" id="Contact">
+        <h2>Contact Me</h2>
       </div>
       <section class="contact">
         <form action="">
@@ -165,6 +169,8 @@
 
   <!-- Google Maps API -->
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHLett8djBo62dDXj0EjCimF8Rd6E8cxg"></script>
+  <!-- inView Script -->
+  <script src="scripts/inView.js"></script>
   <!-- jQuery Script -->
   <script src="scripts/jQuery_v3.3.1.js"></script>
   <!-- JS -->

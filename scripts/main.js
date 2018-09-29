@@ -37,14 +37,25 @@ function makeMapMarker () {
 makeMapMarker();
 
 // Smooth Scroll
-$('header a').on('click', function (e) {
-  var targetHref = $(this).attr('href');
 
-  $('html, body').animate({
-    scrollTop: $(targetHref).offset().top}, 1000);
+// $('header a').on('click', function (e) {
+//   var targetHref = $(this).attr('href');
+//
+//   $('html, body').animate({
+//     scrollTop: $(targetHref).offset().top}, 1000);
+//
+//     e.preventDefault();
+// });
+$('a').on('click', function (event) {
+  if (this.hash !== '') {
+    event.preventDefault();
+    var hash = this.hash;
 
-    e.preventDefault();
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top-100}, 800);
+    }
 });
+
 
 // Testimonial Reveal/Hide Cycle
 function testimonialCycle() {
@@ -79,3 +90,20 @@ function menuClick (event) {
     dropdown.classList.toggle('dropdown-hidden');
   }
 }
+
+// Nav Bar highlight
+function navBarHighlight (id) {
+  var navLink = document.querySelector(`.nav-item a[href='#${id}']`);
+  // console.log(navLink);
+
+  var offSetHeight = .6 * (window.innerHeight);
+  inView.offset({
+    bottom:offSetHeight
+  });
+
+  inView(`#${id}`)
+    .on('enter', () => navLink.classList.toggle('active'))
+    .on('exit', el => navLink.classList.toggle('active'))
+}
+
+['About', 'Projects', 'Skills', 'Quotes', 'Contact'].forEach(navBarHighlight);
