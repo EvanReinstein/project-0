@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
-
   <!-- CSS Style -->
   <link rel="stylesheet" href="style/style.css">
   <title>Evan Reinstein</title>
@@ -63,14 +62,28 @@
         <h2>Projects</h2>
       </div>
       <section class="projects">
-        <div>
-          <div class="carousel">
-            <img src="#" alt="project 0">
-            <img src="#" alt="project 1">
-            <img src="#" alt="project 2">
+        <div class="projects-container">
+          <div id="carousel">
+
+            <div class="prev">
+              <img src="images/about.png">
+            </div>
+
+            <div class="selected">
+              <img src="images/js-racer.png">
+            </div>
+
+            <div class="next">
+              <img src="images/monument.png">
+            </div>
+
           </div>
-          <button class="w3-button w3-display-left">&#10094;</button>
-          <button class="w3-button w3-display-right">&#10095;</button>
+
+          <div class="buttons">
+            <button id="prev">Prev</button>
+            <button id="next">Next</button>
+          </div>
+
           <p>Above are several projects that helped me jump off into the Dev World, enjoy!</p>
         </div>
       </section>

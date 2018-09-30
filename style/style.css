@@ -158,10 +158,71 @@ main {
 /* Projects
 ====================*/
 .projects-header {
-  height: 50vh;
+  /* height: 50vh; */
   width: 100%;
-  margin: 0 auto;
+  margin: 20px auto;
   text-align: center;
+}
+
+.projects-container {
+  margin: 0 auto;
+  border: 2px solid;
+  padding: 20px;
+}
+#carousel {
+  position: relative;
+  height: 400px;
+  top: 45%;
+  transform: translateY(-50%);
+  overflow: hidden;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+#carousel div {
+  position: absolute;
+  transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+  opacity: 1;
+}
+img {
+  width: 400px;
+  transition: width 1s;
+}
+
+.prev {
+     z-index: 5;
+     left: 30%;
+     transform: translateY(50px) translateX(-50%);
+
+     img {
+       width: 300px;
+     }
+}
+
+.selected {
+    z-index: 10;
+    left: 50%;
+    transform: translateY(0px) translateX(-50%);
+}
+
+.next {
+      z-index: 5;
+      left: 70%;
+      transform: translateY(50px) translateX(-50%);
+
+      img {
+        width: 300px;
+      }
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+button:first-child {
+  margin-right: 20px;
 }
 /* Skills
 ====================*/
