@@ -19,14 +19,18 @@ This is my first Front-End solo dive!
 - Tweak for Responsiveness
 
 #### Unsolved Problems 😤 💻 🗡 🗡 🗡 🗡
--NavBar highlighter
--Carousel loop
+- NavBar highlighter
+- Carousel loop
 
 #### Big Wins
 - Using google maps API
-![](readme-assets/google_maps.png)
+
+    ![](readme-assets/google_maps.png)
+
 - Smooth Scroll
-![](readme-assets/smooth_scroll.png)
+
+    ![](readme-assets/smooth_scroll.png)
+
 - Responsiveness
 - Overall look and feel of the site
 
