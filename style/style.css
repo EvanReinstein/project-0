@@ -97,6 +97,7 @@ main {
 }
 
 .projects {
+  padding: 100px 0;
   display: flex;
   flex-direction: row;
 }
@@ -190,13 +191,13 @@ img {
 }
 
 .prev {
-     z-index: 5;
-     left: 30%;
-     transform: translateY(50px) translateX(-50%);
+   z-index: 5;
+   left: 30%;
+   transform: translateY(50px) translateX(-50%);
+}
 
-     img {
-       width: 300px;
-     }
+.prev img {
+  width: 300px;
 }
 
 .selected {
